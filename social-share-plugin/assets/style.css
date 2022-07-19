@@ -1,0 +1,195 @@
+body{
+  background: #f0f0f1;
+}
+.social_share_sizes div{
+    display: inline;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+.social_share_sizes div input{
+    top: 15%;
+    left: -6%;
+    position: relative;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .toggle{
+      display: flex;
+      min-height: 50px;
+align-items: center;
+justify-content: center
+  
+}
+  .toggle > div {
+      
+      min-width: 15%;
+      align-items: center;
+  }
+.wp-picker-holder
+{
+  position: absolute;
+}
+
+#sortable li > div
+{
+  min-width: 20%;
+  min-height: 100%;
+display: inline-block;
+align-items: center;
+}
+
+#sortable li
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  width: 100%;
+  text-align: center;
+  padding: 1px;
+}
+
+.social_post_type  h5{
+ margin: 20px;
+}
+
+
+.social_share_row{ align-items: center;}
+
+.main-setting{
+ padding: 10%;
+}
+
+.wp-picker-container{
+  min-width: 40% !important ;
+}
+
+.row > div{
+  margin-top: 30px;
+}
+
+.social-list {
+  list-style: none;
+  display: flex
+}
+
+.social-icon {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 27px;
+  margin-right: 11px;
+  cursor: pointer
+}
+
+
+.social-icon i {
+  transition: 0.4s all
+}
+
+.social-icon:hover i {
+  transform: scale(1.4)
+}
+
+.post-thumbnail-social-icons{
+  position: relative;
+  top: -100px;
+}
+
+.social-WhatsApp{
+  display: none;
+}
+.floating {
+  position: fixed;
+  width: 60px;
+  margin-top: 150px;
+  transition: all 0.3s linear;
+ /* box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4)*/}
+
+ @media only screen and (max-width: 600px) {
+
+  .social-list {
+    list-style: none;
+   padding-left: 0px;
+  }
+  .social-icon {
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 27px;
+     margin-right: 0px; 
+    cursor: pointer;
+}
+   .social-whatsapp{
+     display: block;
+   }
+}
